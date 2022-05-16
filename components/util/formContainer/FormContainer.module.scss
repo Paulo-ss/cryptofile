@@ -1,0 +1,14 @@
+@import "../../../styles/mixins";
+
+.formContainer {
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: #222222;
+  @include shadow-sm;
+
+  @include responsive(md) {
+    padding: 1rem;
+  }
+}

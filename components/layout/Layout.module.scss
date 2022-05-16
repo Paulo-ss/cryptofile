@@ -1,0 +1,16 @@
+@import "../../styles/mixins";
+
+.app {
+  padding: 0 2rem;
+
+  @include responsive(sm) {
+    padding: 0 1.5rem;
+  }
+  
+  .appMainContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.notification {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  border-radius: 3px;
+  padding: 2rem;
+  z-index: 10;
+  @include shadow-md;
+
+  @include responsive(sm) {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  &.success {
+    background-color: $green;
+  }
+
+  &.info {
+    background-color: $blue;
+  }
+
+  &.danger {
+    background-color: $red;
+  }
+}

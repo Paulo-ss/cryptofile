@@ -1,0 +1,39 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.loginRegisterContainer {
+  display: flex;
+  justify-content: center;
+
+  @include responsive(md) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    margin: 0 5rem;
+
+    @include responsive(md) {
+      margin: 2rem 0;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .divider {
+    display: block;
+    width: 1px;
+    background-color: $black;
+
+    @include responsive(md) {
+      height: 1px;
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+}
